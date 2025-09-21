@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>免费领取2大福利｜1-6年级计算打卡材料 & 敏敏老师数学思维课15节</title>
+  <meta name="description" content="选择年级即可领：①1-6年级计算打卡材料 ② 敏敏老师数学思维课15节（每日限量20个）。打开微信扫一扫老师二维码添加，或使用备用微信号 sxmmls6。" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --card:#ffffff;
+      --accent:#f59e0b;
+      --accent-2:#facc15;
+      --text:#111827;
+      --muted:#6b7280;
+      --ok:#16a34a;
+      --warn:#b45309;
+      --shadow: 0 10px 28px rgba(17,24,39,.08);
+      --radius: 18px;
+      --border:#e5e7eb;
+      --danger:#dc2626;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, "Noto Sans CJK SC", sans-serif;
+      background: var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{max-width:900px;margin:0 auto;padding:28px 18px 60px;}
+    header{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;margin-top:6px;margin-bottom:12px;}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:linear-gradient(180deg, rgba(250,204,21,.28), rgba(245,158,11,.18));color:#92400e;font-weight:700;letter-spacing:.5px;box-shadow:0 0 0 1px rgba(245,158,11,.35) inset, var(--shadow);font-size:14px;}
+    h1{font-size:clamp(22px, 4.2vw, 36px);line-height:1.35;margin:0;font-weight:800;letter-spacing:.2px;text-wrap:balance;}
+    h1 strong{color:var(--accent)}
+    .limit{margin-top:2px;color:var(--warn);font-weight:700;font-size:clamp(14px, 3.2vw, 16px);}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+    @media (max-width:520px){.grid{grid-template-columns:repeat(2,1fr)}}
+    button.grade{width:100%;border:1px solid var(--border);background:linear-gradient(180deg, rgba(245,158,11,.08), rgba(250,204,21,.06));color:#7c2d12;padding:18px 6px;border-radius:16px;font-size:clamp(18px, 4.5vw, 22px);font-weight:900;letter-spacing:.5px;cursor:pointer;transition:transform .06s ease, box-shadow .2s ease, background .2s ease;box-shadow:0 6px 16px rgba(245,158,11,.12);outline:none;-webkit-tap-highlight-color: transparent;}
+    button.grade:hover{transform:translateY(-1px)}
+    button.grade:active{transform:translateY(1px) scale(.99)}
+    .h2line{font-size:clamp(18px,4.2vw,22px);letter-spacing:.2px;margin:0}
+    .cta-inline{margin:6px 0 12px 0;font-size:clamp(18px,4.2vw,22px);color:var(--muted);}
+    .result{margin-top:18px;display:none;}
+    .result.show{display:block}
+    .panel{background:var(--card);border:1px dashed rgba(245,158,11,.45);border-radius:16px;padding:16px;}
+    .note-top{margin:0 0 10px 0;font-size:clamp(18px,4.2vw,22px);color:var(--muted);text-align:left;}
+    footer{margin-top:34px;text-align:center;color:var(--muted);font-size:12px;}
+
+    .benefits-wrap{display:inline-block;text-align:left;line-height:1.4;margin-top:6px;}
+    .benefit-line{display:block;font-weight:800;color:var(--accent);}
+
+    .qr-wrap{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;padding:12px;border:1px solid rgba(245,158,11,.45);border-radius:16px;background:rgba(250,204,21,.08);}
+    .qr-img{width:min(260px, 60vw);height:auto;border-radius:12px;background:#fff;border:1px solid var(--border);box-shadow:0 6px 16px rgba(0,0,0,.06);cursor:zoom-in;}
+    .qr-side{min-width: 240px;max-width: 420px;color:#7c2d12;font-size:clamp(14px,3.2vw,16px);line-height:1.7;}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:#fff;cursor:pointer}
+    .btn.primary{background:linear-gradient(180deg, rgba(245,158,11,.16), rgba(250,204,21,.12));border-color:rgba(245,158,11,.45);font-weight:700;color:#7c2d12;}
+    .helper{margin-top:8px;color:#6b7280;font-size:14px;line-height:1.6}
+    .fallback{margin-top:10px;color:#6b7280;font-size:14px}
+    .wx-id{font-weight:800;letter-spacing:.6px}
+
+    .mask{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:60;}
+    .lb{max-width:92vw;max-height:92vh;border-radius:16px;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.35);}
+    .lb img{display:block;max-width:92vw;max-height:92vh;border-radius:16px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">🎁 免费领取 · 每日限量20个</div>
+      <h1>
+        免费领取2大福利：
+        <br>
+        <span class="benefits-wrap">
+          <span class="benefit-line">① 1-6年级计算打卡材料</span>
+          <span class="benefit-line">② 敏敏老师数学思维课15节</span>
+        </span>
+      </h1>
+      <div class="limit">今日名额剩余：<span id="quota">--</span> 个</div>
+    </header>
+
+    <section class="card" aria-labelledby="pick">
+      <h2 id="pick" class="h2line">👇 选择孩子年级</h2>
+      <div class="cta-inline">（点击年级后，将显示老师微信二维码）</div>
+
+      <div class="grid" role="list">
+        <button class="grade" data-grade="1">一年级</button>
+        <button class="grade" data-grade="2">二年级</button>
+        <button class="grade" data-grade="3">三年级</button>
+        <button class="grade" data-grade="4">四年级</button>
+        <button class="grade" data-grade="5">五年级</button>
+        <button class="grade" data-grade="6">六年级</button>
+      </div>
+
+      <div id="result" class="result">
+        <div class="panel">
+          <p class="note-top">添加微信后立即发放（先到先得）。</p>
+
+          <div class="qr-wrap">
+            <img id="qr" class="qr-img" src="./qr.png" alt="微信二维码（长按保存或扫码添加老师）" />
+            <div class="qr-side">
+              <div style="font-weight:800;margin-bottom:6px;">打开微信扫一扫添加老师</div>
+              <div>方法A：另一台手机扫描左侧二维码。</div>
+              <div>方法B：本机操作请先 <strong>长按保存二维码到相册</strong> → 打开微信“扫一扫” → 右上角“相册”导入识别。</div>
+              <div class="helper">添加成功后，记得回复孩子的年级，方便按年级发放资料与课程。</div>
+              <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap;">
+                <button id="saveBtn" class="btn primary">保存二维码到相册</button>
+                <button id="zoomBtn" class="btn">点击放大</button>
+              </div>
+              <div class="fallback">若二维码未能加载，可备用手动添加微信号：<span class="wx-id">sxmmls6</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> 敏敏老师 · 数学思维</footer>
+  </div>
+
+  <div id="mask" class="mask" role="dialog" aria-modal="true">
+    <div class="lb"><img id="lbimg" src="./qr.png" alt="二维码大图" /></div>
+  </div>
+
+  <script>
+    (function(){
+      const $ = s => document.querySelector(s);
+      const $$ = s => Array.from(document.querySelectorAll(s));
+      const result = $("#result");
+      const quotaEl = $("#quota");
+      const saveBtn = $("#saveBtn");
+      const zoomBtn = $("#zoomBtn");
+      const qrImg = $("#qr");
+      const mask = $("#mask");
+      const lbimg = $("#lbimg");
+
+      function dailyKey(){ const d = new Date(); return "quota-"+d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate(); }
+      function ensureQuota(){
+        const key = dailyKey();
+        let v = localStorage.getItem(key);
+        if(!v){
+          v = Math.floor(Math.random()*15)+6;
+          try{ localStorage.clear(); }catch(e){}
+          try{ localStorage.setItem(key, String(v)); }catch(e){}
+        }
+        quotaEl.textContent = v;
+      }
+      ensureQuota();
+
+      const urlParams = new URLSearchParams(location.search);
+      const hashGrade = location.hash && location.hash.replace("#","");
+      const gradeInit = urlParams.get("grade") || (["1","2","3","4","5","6"].includes(hashGrade) ? hashGrade : null);
+
+      function pickGrade(g){
+        result.classList.add("show");
+        result.scrollIntoView({behavior:"smooth", block:"start"});
+        const p = new URLSearchParams(location.search);
+        p.set("grade", g);
+        history.replaceState(null, "", location.pathname + "?" + p.toString() + "#" + g);
+      }
+      $$(".grade").forEach(btn => btn.addEventListener("click", () => pickGrade(btn.getAttribute("data-grade")), {passive:true}));
+      if(gradeInit){ pickGrade(gradeInit); }
+
+      function downloadImage(imgEl, filename="qr.png"){
+        try{
+          const a = document.createElement('a');
+          a.href = imgEl.src;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }catch(e){
+          imgEl.scrollIntoView({behavior:"smooth", block:"center"});
+        }
+      }
+      saveBtn.addEventListener('click', ()=> downloadImage(qrImg));
+
+      function openZoom(){ mask.style.display='flex'; }
+      function closeZoom(){ mask.style.display='none'; }
+      zoomBtn.addEventListener('click', openZoom);
+      qrImg.addEventListener('click', openZoom);
+      mask.addEventListener('click', (e)=>{ if(e.target===mask) closeZoom(); });
+
+      $("#year").textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
