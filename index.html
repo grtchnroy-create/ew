@@ -7,10 +7,9 @@
 <meta name="description" content="选择年级即可领：①1-6年级计算打卡材料 ② 敏敏老师数学思维课15节（每日限量20个）。打开微信扫一扫老师二维码添加，或使用备用微信号 sxmmls6。" />
 <meta name="format-detection" content="telephone=no, email=no" />
 <style>
-/* —— 样式与之前版本一致，省略长注释 —— */
 :root{
-  --bg:#ffffff;--card:#ffffff;--accent:#f59e0b;--accent-2:#facc15;
-  --text:#111827;--muted:#6b7280;--warn:#b45309;--shadow:0 10px 28px rgba(17,24,39,.08);
+  --bg:#ffffff;--card:#ffffff;--accent:#f59e0b;--text:#111827;
+  --muted:#6b7280;--warn:#b45309;--shadow:0 10px 28px rgba(17,24,39,.08);
   --border:#e5e7eb;
 }
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);}
@@ -77,7 +76,7 @@ footer{margin-top:34px;text-align:center;color:var(--muted);font-size:12px;}
         <p class="note-top">添加微信后立即发放（先到先得）。</p>
 
         <div class="qr-wrap">
-          <img id="qr" class="qr-img" src="./qr.png" alt="微信二维码（长按保存或扫码添加老师）" />
+          <img id="qr" class="qr-img" src="./qr.jpg" alt="微信二维码（长按保存或扫码添加老师）" />
           <div class="qr-side">
             <div style="font-weight:800;margin-bottom:6px;">添加老师微信</div>
             <div>方法：请先长按保存二维码到相册 → 打开微信“扫一扫” → 右上角“相册”导入图片识别。</div>
@@ -97,7 +96,7 @@ footer{margin-top:34px;text-align:center;color:var(--muted);font-size:12px;}
 </div>
 
 <div id="mask" class="mask">
-  <div class="lb"><img id="lbimg" src="./qr.png" alt="二维码大图" /></div>
+  <div class="lb"><img id="lbimg" src="./qr.jpg" alt="二维码大图" /></div>
 </div>
 
 <script>
@@ -138,7 +137,7 @@ footer{margin-top:34px;text-align:center;color:var(--muted);font-size:12px;}
   $$(".grade").forEach(btn => btn.addEventListener("click", () => pickGrade(btn.getAttribute("data-grade")), {passive:true}));
   if(gradeInit){ pickGrade(gradeInit); }
 
-  function downloadImage(imgEl, filename="qr.png"){
+  function downloadImage(imgEl, filename="qr.jpg"){
     try{
       const a = document.createElement('a');
       a.href = imgEl.src;
